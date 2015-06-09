@@ -1,0 +1,15 @@
+name: msg
+version: 0.1.0
+api: [1.12.0]
+main: MSG/Main
+
+commands:
+  message:
+    usage: /message <player> [message]
+    description: Sends a private message to another player
+    permission: msg
+    aliases: "msg"
+permissions:
+  msg:
+    default: true
+    description: Allows a player to use the msg command
