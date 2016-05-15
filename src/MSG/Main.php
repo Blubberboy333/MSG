@@ -31,7 +31,7 @@ class Main extends PluginBase{
 				if($player instanceof Player){
 					$sender->sendMessage("[" .TextFormat::ORANGE . "me" . TextFormat::PURPLE . "->" . TextFormat::ORANGE . $player->getName(). TextFormat::RESET . "] " .implode(" ", $args));
 					$player->sendMessage("[" .TextFormat::ORANGE .$sender-.getName(). TextFormat::PURPLE . "->" . TextFormat::ORANGE. "me" . TextFormat::RESET . "] " .implode(" ", $args));
-					$this->getLogger()->info("[" . TextFormatORANGE . $sender->getName() . TextFormat::PURPLE . "->" . TextFormat::ORANGE . $player->getName() . TextFormat::RESET . "] " implode(" ", $args));
+					$this->getLogger()->info("[" . TextFormat::ORANGE . $sender->getName() . TextFormat::PURPLE . "->" . TextFormat::ORANGE . $player->getName() . TextFormat::RESET . "] " implode(" ", $args));
 					return true;
 				}else{
 					$sender->sendMessage(TextFormat::RED . "Error: " TextFormat::RESET . "That player isn't online!");
